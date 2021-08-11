@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeLeaf.org">
+
+<head>
+<meta charset="ISO-8859-1">
+<meta name= "viewport" content="width=device-width , intial-scale:1.0">
+ <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=New+Rocker&family=Rock+Salt&display=swap" rel="stylesheet">
+ <link rel="stylesheet" href=""th:href="@{/css/reset.css}"/>
+ <link rel="stylesheet" href=""th:href="@{/css/styles.css}"/>
+ <script  th:src="@{/css/simple.js}"></script>
+<title>Self Coder</title>
+</head>
+ <body>
+
+    <header>
+        <div class="header-container">
+            <div id="logo">
+              
+            <h1>   <a th:href="@{/}">SelfCoder</a></h1>
+            </div>
+            <div >
+                <nav class="menu-wrapper">
+                      <ul>
+                      <li>
+                       <a href="./practice/">practice</a> 
+                      </li>
+                      <li>
+                        <a href="./courses.html">courses</a>
+                      </li>
+                   
+                     <li>
+                        <a th:href="@{/}">home</a>
+                     </li>
+                     <li>
+                        <a th:href="@{/about/}">about</a>
+                      </li>
+                      <li>
+                        <a th:href="@{/contact/}">contact us</a>
+                      </li>
+                      <li>
+                        <a th:href="@{/login/}">login</a>
+                      </li>
+                   </ul>
+                </nav>
+            </div>
+            
+        </div>
+    </header>
+    <section id="below-header">
+   
+     <div class="container">
+        <div class="box1">
+           <h3><a href="#" style="text-decoration: none ; color:white;" >Programing language</a> </h3>
+        </div >
+        <div class="box2">
+          <h3><a href="#" style="text-decoration: none ; color:white;">Data strucutre</a></h3>
+        </div>
+        <div class="box3" >
+          <h3><a href="#" style="text-decoration: none ; color:white;">Algorithm </a></h3>
+        </div>
+        <div class="box4" >
+          <h3><a href="#" style="text-decoration: none ; color:white;">Dbms</a></h3>
+        </div>
+        </div>
+    </section>
+    
+    <section id="courses">
+     <div class="container">
+         <div class="box1">
+           <h3><a href="#" style="text-decoration: none ; color:white;">System Design</a> </h3>
+         </div >
+         <div class="box2">
+           <h3><a href="#" style="text-decoration: none ; color:white;">Machine learning</a> </h3>
+         </div>
+         <div class="box3">
+           <h3><a href="#" style="text-decoration: none ; color:white;">Web Dev</a></h3>
+         </div>
+         <div class="box4">
+           <h3><a href="#" style="text-decoration: none ; color:white;">Backend </a></h3>
+         </div>
+         </div>
+    </section>
+    
+    <section id="story">
+        <div  class="container"  id="team">
+             <h1 style="text-align: center; text-decoration: bold">Our team</h1>
+             <img alt="" th:src="@{/image/ravi.jpg}">
+             <img alt="" th:src="@{/image/sumit.jpg}">
+             <img alt="" th:src="@{/image/shivam.jpg}" style="height:315px;">
+             <ul>
+             <li>
+            <h4 style="color:white; font-size: 18px;"> Ravi Sahu (Nit Kurukshetra) </h4>
+             </li>
+              <li>
+            <h4 style="color:white; font-size: 18px;"> Sumit verma (Nit Allahabad) </h4>
+             </li>
+             <li>
+            <h4 style="color:white; font-size: 18px; " > Shivam jadhav (Nit BAhopal) </h4>
+            </li>
+             </ul>
+             
+        </div>
+    </section>
+   
+    
+   <footer>
+      <div class="footer-container">
+        <nav class="menu-wrapper">
+          <ul id="footer-menu">
+            <li class="menu-item"><a href="#">Privacy Policy</a></li>
+            <li class="menu-item"><a href="#">Legal</a></li>
+            <li class="menu-item"><a href="#">Sponsors</a></li>
+          </ul>
+        </nav>
+        <div id="copyright">
+          &copy; Copyright - SelfCoder - All Rights Reserved.
+        </div>
+      </div>
+    </footer>
+ </body>
+</html>

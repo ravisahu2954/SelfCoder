@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeLeaf.org">
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+ <link rel="stylesheet" href=""th:href="@{/css/exam.css}"/> 
+</head>
+<body>
+
+
+
+  <form  action="" th:action="@{/do_register}" method="post"  th:object="${user}">
+  
+     <label for="fname">id</label><br>
+    <input  type="number" id="fname"  name="id"  th:value ="${user.id}"/><br> 
+     <label for="emai">Email</label><br>
+    <input  type="email"   name="email"  th:value ="${user.email}"/><br>
+  <label for="fname">First name:</label><br> 
+   <input type="text"  name="firstName"  th:value ="${user.firstName}"/><br>
+  <label for="lname">Last name:</label><br>
+  <input type="text"  name="lastName" th:value="${user.lastName}"/><br><br>
+  <input type="submit" value="Submit"/>  
+  </form>
+  
+  
+  
+  
+  
+  
+</body>
+</html>
